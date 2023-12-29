@@ -4,7 +4,7 @@ var cors = require('cors')
 class Server {
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;//Hacemos visible el puerto globalmente en una variable
+        this.port = process.env.PORT || 3000;//Hacemos visible el puerto globalmente en una variable
 
         //Rutas api
         this.usuariosPost = '/api/usuarios';
